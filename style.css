@@ -1,0 +1,89 @@
+/***********************
+******** Global ********
+***********************/
+body {
+    max-width: 100%;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+}
+h1 {
+    font-size: 45px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/*     Header     */
+#searchName {
+    padding: 0.5em 1em;
+    background-color: white;
+    border-radius: 10px;
+}
+#searchBTN, aside button {
+    padding: 0.5em 1em;
+    background-image: linear-gradient(#E5E5E5, #D2D2D2);
+    border-color: #C9C9C9;
+    border-radius: 3px;
+}
+#searchBTN:hover, aside button:hover {
+    background-image: linear-gradient(#D1F3FF, #B7EDFF);
+    border-color: #A2E7FF;
+    cursor: pointer;
+}
+
+/*     Aside     */
+aside {
+    position: sticky;
+    top: 3em;
+    right: 0;
+    float: right;
+    padding: 0.5em;
+    background-color: white;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #D7D7D7;
+}
+
+/*****************************
+******** Search Sector *******
+*****************************/
+.cards {
+    width: 23%;
+    background-color: white;
+    border: 2px solid lightgrey;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    overflow: hidden;
+}
+.cards img {
+    width: 100%;
+}
+.cards p, .cards h2 {
+    padding: 0.2em;
+    text-align: center;
+}
+.cards button {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background-color: #0EC0FF;
+    color: #E9E9E9;
+    border: 2px solid #009AD2;
+    border-radius: 10px;
+}
+.cards button:hover {
+    background-color: #66D7FF;
+    border-color: #40B8E4;
+}
+#searchresult {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
